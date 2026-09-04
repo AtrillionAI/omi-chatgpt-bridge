@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "tools": [
+    {
+      "name": "ask_mac",
+      "description": "Talk to Mac, the temporary personal assistant bridge. Use this when the user says Hey Mac, asks Mac a question, gives Mac a task, or asks Mac to remember or route something.",
+      "endpoint": "/api/ask_mac",
+      "method": "POST",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "description": "The user's complete spoken request after the activation phrase."
+          }
+        },
+        "required": ["message"]
+      }
+    }
+  ]
+}
